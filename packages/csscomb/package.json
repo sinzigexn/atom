@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+        "spec": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/apm-install-dir-1161121-1439-lw9req"
+    ]
+  ],
+  "_from": "../d-1161121-1439-gkkr3l/package.tgz",
+  "_id": "csscomb@0.3.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/csscomb",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+    "spec": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161121-1439-gkkr3l/package.tgz",
+  "_shasum": "97415577588e955bbda282f7ee69a79791272a16",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/d-1161121-1439-gkkr3l/package.tgz",
+  "_where": "/private/var/folders/5n/bs9zws691538qrr2226g51d80000gp/T/apm-install-dir-1161121-1439-lw9req",
+  "activationCommands": {
+    "atom-workspace": [
+      "csscomb:run"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/bruce/atom-csscomb/issues"
+  },
+  "dependencies": {
+    "csscomb": "^3.1.6",
+    "season": "^5.2.0"
+  },
+  "description": "Atom Editor plugin for CSScomb, http://csscomb.com",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/bruce/atom-csscomb#readme",
+  "license": "MIT",
+  "main": "./lib/csscomb",
+  "name": "csscomb",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# Atom Editor Plugin for CSScomb\n\nSort properties of one or more CSS/SCSS/Less rules using\n[CSScomb](http://csscomb.com/).\n\n## Installation\n\nSee the [Atom docs](http://atom.io/docs/latest/customizing-atom#installing-packages).\n\n```shell\n$ apm install csscomb\n```\n\n## CSScomb Configuration\n\nThe plugin uses the following strategy to determine the CSScomb configuration to use.\n\n* First, it looks for a user configuration; a `csscomb` property in your Atom\n  `config.cson`.\n* Next, it looks for a project configuration; `.csscomb.json` or `.csscomb.cson`\n  in your project root.\n* If no configuration is found, it falls back to the predefined \"csscomb\"\n  configuration that ships with [csscomb.js](https://github.com/csscomb/csscomb.js/blob/master/config/csscomb.json).\n\nYour configuration can be a CSScomb configuration object or the [name of a predefined configuration](https://github.com/csscomb/csscomb.js/tree/master/config).\n\n## Using It\n\nPress `ctrl-alt-c` or choose `Packages -> CSScomb -> Sort` or\n`Edit -> Lines -> Sort with CSScomb`.\n\nYou can limit what CSScomb processes by using selections.\n\nNote: Make sure to select entire CSS rules (selector, braces, and\nproperties; valid CSS), not just the property list.\n\nThe plugin uses the name of the file to determine the syntax\n(css, scss, or less).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruce/atom-csscomb.git"
+  },
+  "version": "0.3.1"
+}

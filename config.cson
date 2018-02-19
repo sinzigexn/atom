@@ -1,0 +1,25 @@
+"*":
+  autoprefixer: {}
+  codic:
+    accessToken: "0aKw9UNS3wbUE4PxYqDRBxy9SYU5KV4v2"
+  core:
+    closeDeletedFileTabs: true
+    disabledPackages: [
+      "autoprefixer"
+      "autocomplete-paths"
+    ]
+    projectHome: "/Users/kimura/zigexn/arubaito_v2"
+    telemetryConsent: "no"
+  editor:
+    fontSize: 13
+    invisibles: {}
+  "exception-reporting":
+    userId: "26d73c8d-2de1-b888-9a4e-42418a45549c"
+  minimap:
+    plugins:
+      "git-diff": false
+      "git-diffDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  welcome:
+    showOnStartup: false

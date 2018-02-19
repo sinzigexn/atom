@@ -1,0 +1,342 @@
+{
+  "name": "codic",
+  "main": "./lib/codic",
+  "version": "0.1.0",
+  "description": "codicを使ってネーミング生成",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "codic:convert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codic-project/atom-codic.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "superagent": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.9.0",
+    "eslint-config-ponko2": "^1.2.1"
+  },
+  "readme": "# Codic Package\n\nAtom から [codic](https://codic.jp/) を使ってネーミングを生成するためのパッケージ。\n\n## インストール\n\n```console\n$ apm install codic\n```\n\n## 使い方\n\n変換したい文字列を選択した後 `ctrl-shift-d` で変換を行います。\n\n## 詳細設定\n\n`cmd-shift-p` または `ctrl-shift-p` から `Open Your Config` で開ける `config.cson` の末尾に下記のような設定を加える事で、JavaScriptの場合はcamelCase変換、CSSの場合はハイフネーション変換といったようにファイルの言語毎に設定切替を行うことができます。\n\n参考リンク: [Language-specific Settings in your Config File](https://atom.io/docs/latest/using-atom-basic-customization#language-specific-settings-in-your-config-file)\n\n```cson\n\".js.source\":\n  codic:\n    acronymStyle: \"camel strict\"\n    casing: \"camel\"\n\".css.source\":\n  codic:\n    casing: \"hyphen\"\n```\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/codic-project/atom-codic/issues"
+  },
+  "homepage": "https://github.com/codic-project/atom-codic#readme",
+  "_id": "codic@0.1.0",
+  "_shasum": "92bebbb54520e4d9b2d2446ae3463111c1875b72",
+  "_resolved": "file:../d-11627-13362-b82jbj/package.tgz",
+  "_from": "../d-11627-13362-b82jbj/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "superagent",
+        "version": "1.7.2",
+        "path": "node_modules/superagent/lib/node/index.js"
+      },
+      {
+        "name": "component-emitter",
+        "version": "1.2.0",
+        "path": "node_modules/superagent/node_modules/component-emitter/index.js"
+      },
+      {
+        "name": "cookiejar",
+        "version": "2.0.6",
+        "path": "node_modules/superagent/node_modules/cookiejar/cookiejar.js"
+      },
+      {
+        "name": "debug",
+        "version": "2.2.0",
+        "path": "node_modules/superagent/node_modules/debug/node.js"
+      },
+      {
+        "name": "ms",
+        "version": "0.7.1",
+        "path": "node_modules/superagent/node_modules/debug/node_modules/ms/index.js"
+      },
+      {
+        "name": "extend",
+        "version": "3.0.0",
+        "path": "node_modules/superagent/node_modules/extend/index.js"
+      },
+      {
+        "name": "form-data",
+        "version": "0.2.0",
+        "path": "node_modules/superagent/node_modules/form-data/lib/form_data.js"
+      },
+      {
+        "name": "async",
+        "version": "0.9.2",
+        "path": "node_modules/superagent/node_modules/form-data/node_modules/async/lib/async.js"
+      },
+      {
+        "name": "combined-stream",
+        "version": "0.0.7",
+        "path": "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js"
+      },
+      {
+        "name": "delayed-stream",
+        "version": "0.0.5",
+        "path": "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js"
+      },
+      {
+        "name": "mime-types",
+        "version": "2.0.14",
+        "path": "node_modules/superagent/node_modules/form-data/node_modules/mime-types/index.js"
+      },
+      {
+        "name": "mime-db",
+        "version": "1.12.0",
+        "path": "node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/index.js"
+      },
+      {
+        "name": "formidable",
+        "version": "1.0.17",
+        "path": "node_modules/superagent/node_modules/formidable/lib/index.js"
+      },
+      {
+        "name": "methods",
+        "version": "1.1.2",
+        "path": "node_modules/superagent/node_modules/methods/index.js"
+      },
+      {
+        "name": "mime",
+        "version": "1.3.4",
+        "path": "node_modules/superagent/node_modules/mime/mime.js"
+      },
+      {
+        "name": "qs",
+        "version": "2.3.3",
+        "path": "node_modules/superagent/node_modules/qs/index.js"
+      },
+      {
+        "name": "readable-stream",
+        "version": "1.0.27-1",
+        "path": "node_modules/superagent/node_modules/readable-stream/readable.js"
+      },
+      {
+        "name": "core-util-is",
+        "version": "1.0.2",
+        "path": "node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/lib/util.js"
+      },
+      {
+        "name": "inherits",
+        "version": "2.0.1",
+        "path": "node_modules/superagent/node_modules/readable-stream/node_modules/inherits/inherits.js"
+      },
+      {
+        "name": "isarray",
+        "version": "0.0.1",
+        "path": "node_modules/superagent/node_modules/readable-stream/node_modules/isarray/index.js"
+      },
+      {
+        "name": "string_decoder",
+        "version": "0.10.31",
+        "path": "node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/index.js"
+      },
+      {
+        "name": "reduce-component",
+        "version": "1.0.1",
+        "path": "node_modules/superagent/node_modules/reduce-component/index.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        "coffeelint.json",
+        "node_modules/superagent/bower.json",
+        "node_modules/superagent/component.json",
+        "node_modules/superagent/node_modules/component-emitter/package.json",
+        "node_modules/superagent/node_modules/cookiejar/package.json",
+        "node_modules/superagent/node_modules/debug/bower.json",
+        "node_modules/superagent/node_modules/debug/component.json",
+        "node_modules/superagent/node_modules/debug/node_modules/ms/package.json",
+        "node_modules/superagent/node_modules/debug/package.json",
+        "node_modules/superagent/node_modules/extend/.jscs.json",
+        "node_modules/superagent/node_modules/extend/component.json",
+        "node_modules/superagent/node_modules/extend/package.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/async/bower.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/async/component.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/async/package.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/package.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/db.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/package.json",
+        "node_modules/superagent/node_modules/form-data/node_modules/mime-types/package.json",
+        "node_modules/superagent/node_modules/form-data/package.json",
+        "node_modules/superagent/node_modules/formidable/package.json",
+        "node_modules/superagent/node_modules/methods/package.json",
+        "node_modules/superagent/node_modules/mime/package.json",
+        "node_modules/superagent/node_modules/mime/types.json",
+        "node_modules/superagent/node_modules/qs/package.json",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/package.json",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/inherits/package.json",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/isarray/component.json",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/isarray/package.json",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/package.json",
+        "node_modules/superagent/node_modules/readable-stream/package.json",
+        "node_modules/superagent/node_modules/reduce-component/component.json",
+        "node_modules/superagent/node_modules/reduce-component/package.json",
+        "node_modules/superagent/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "lib/codic.js",
+        "node_modules/superagent/docs/highlight.js",
+        "node_modules/superagent/docs/jquery-ui.min.js",
+        "node_modules/superagent/docs/jquery.js",
+        "node_modules/superagent/docs/jquery.tocify.min.js",
+        "node_modules/superagent/lib/client.js",
+        "node_modules/superagent/lib/node/agent.js",
+        "node_modules/superagent/lib/node/index.js",
+        "node_modules/superagent/lib/node/parsers/image.js",
+        "node_modules/superagent/lib/node/parsers/index.js",
+        "node_modules/superagent/lib/node/parsers/json.js",
+        "node_modules/superagent/lib/node/parsers/text.js",
+        "node_modules/superagent/lib/node/parsers/urlencoded.js",
+        "node_modules/superagent/lib/node/part.js",
+        "node_modules/superagent/lib/node/response.js",
+        "node_modules/superagent/lib/node/utils.js",
+        "node_modules/superagent/node_modules/component-emitter/index.js",
+        "node_modules/superagent/node_modules/cookiejar/cookiejar.js",
+        "node_modules/superagent/node_modules/debug/browser.js",
+        "node_modules/superagent/node_modules/debug/debug.js",
+        "node_modules/superagent/node_modules/debug/node.js",
+        "node_modules/superagent/node_modules/debug/node_modules/ms/index.js",
+        "node_modules/superagent/node_modules/extend/index.js",
+        "node_modules/superagent/node_modules/form-data/lib/form_data.js",
+        "node_modules/superagent/node_modules/form-data/node_modules/async/lib/async.js",
+        "node_modules/superagent/node_modules/form-data/node_modules/async/support/sync-package-managers.js",
+        "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/lib/combined_stream.js",
+        "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/lib/delayed_stream.js",
+        "node_modules/superagent/node_modules/form-data/node_modules/mime-types/index.js",
+        "node_modules/superagent/node_modules/form-data/node_modules/mime-types/node_modules/mime-db/index.js",
+        "node_modules/superagent/node_modules/formidable/index.js",
+        "node_modules/superagent/node_modules/formidable/lib/file.js",
+        "node_modules/superagent/node_modules/formidable/lib/incoming_form.js",
+        "node_modules/superagent/node_modules/formidable/lib/index.js",
+        "node_modules/superagent/node_modules/formidable/lib/json_parser.js",
+        "node_modules/superagent/node_modules/formidable/lib/multipart_parser.js",
+        "node_modules/superagent/node_modules/formidable/lib/octet_parser.js",
+        "node_modules/superagent/node_modules/formidable/lib/querystring_parser.js",
+        "node_modules/superagent/node_modules/methods/index.js",
+        "node_modules/superagent/node_modules/mime/build/build.js",
+        "node_modules/superagent/node_modules/mime/build/test.js",
+        "node_modules/superagent/node_modules/mime/cli.js",
+        "node_modules/superagent/node_modules/mime/mime.js",
+        "node_modules/superagent/node_modules/qs/index.js",
+        "node_modules/superagent/node_modules/qs/lib/index.js",
+        "node_modules/superagent/node_modules/qs/lib/parse.js",
+        "node_modules/superagent/node_modules/qs/lib/stringify.js",
+        "node_modules/superagent/node_modules/qs/lib/utils.js",
+        "node_modules/superagent/node_modules/readable-stream/duplex.js",
+        "node_modules/superagent/node_modules/readable-stream/lib/_stream_duplex.js",
+        "node_modules/superagent/node_modules/readable-stream/lib/_stream_passthrough.js",
+        "node_modules/superagent/node_modules/readable-stream/lib/_stream_readable.js",
+        "node_modules/superagent/node_modules/readable-stream/lib/_stream_transform.js",
+        "node_modules/superagent/node_modules/readable-stream/lib/_stream_writable.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/lib/util.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/core-util-is/test.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/inherits/inherits.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/inherits/inherits_browser.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/inherits/test.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/isarray/build/build.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/isarray/index.js",
+        "node_modules/superagent/node_modules/readable-stream/node_modules/string_decoder/index.js",
+        "node_modules/superagent/node_modules/readable-stream/passthrough.js",
+        "node_modules/superagent/node_modules/readable-stream/readable.js",
+        "node_modules/superagent/node_modules/readable-stream/transform.js",
+        "node_modules/superagent/node_modules/readable-stream/writable.js",
+        "node_modules/superagent/node_modules/reduce-component/index.js",
+        "node_modules/superagent/superagent.js",
+        "node_modules/superagent/test.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "lib"
+        ],
+        "dependencies": {
+          "superagent": "^1.4.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/superagent",
+          "node_modules/superagent/docs",
+          "node_modules/superagent/lib",
+          "node_modules/superagent/lib/node",
+          "node_modules/superagent/lib/node/parsers"
+        ],
+        "dependencies": {
+          "qs": "2.3.3",
+          "formidable": "~1.0.14",
+          "mime": "1.3.4",
+          "component-emitter": "~1.2.0",
+          "methods": "~1.1.1",
+          "cookiejar": "2.0.6",
+          "debug": "2",
+          "reduce-component": "1.0.1",
+          "extend": "3.0.0",
+          "form-data": "0.2.0",
+          "readable-stream": "1.0.27-1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/superagent/node_modules/debug"
+        ],
+        "dependencies": {
+          "ms": "0.7.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/superagent/node_modules/form-data/lib",
+          "node_modules/superagent/node_modules/form-data"
+        ],
+        "dependencies": {
+          "async": "~0.9.0",
+          "combined-stream": "~0.0.4",
+          "mime-types": "~2.0.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/superagent/node_modules/form-data/node_modules/combined-stream/lib",
+          "node_modules/superagent/node_modules/form-data/node_modules/combined-stream"
+        ],
+        "dependencies": {
+          "delayed-stream": "0.0.5"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/superagent/node_modules/form-data/node_modules/mime-types"
+        ],
+        "dependencies": {
+          "mime-db": "~1.12.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/superagent/node_modules/readable-stream",
+          "node_modules/superagent/node_modules/readable-stream/lib"
+        ],
+        "dependencies": {
+          "core-util-is": "~1.0.0",
+          "isarray": "0.0.1",
+          "string_decoder": "~0.10.x",
+          "inherits": "~2.0.1"
+        }
+      }
+    ]
+  }
+}
